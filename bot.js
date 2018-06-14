@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const TOKEN = "NDUzNTAyNTEyNDQ4OTI5ODAy.Dff0pQ.Rkb_e8wGtQOK60nVsSvpQtX25-A";
+const client = new Discord.Client();
 
 const PREFIX = "sh!"
 
@@ -69,5 +69,5 @@ bot.on("message", function(message) {
  
 
 })
-bot.login(TOKEN)
+client.login(process.env.BOT_TOKEN);
 
